@@ -2,29 +2,29 @@
 
 /**
 * @author Susana Fabián Antón
-* @since 18/11/2020
-* @version 18/11/2020
+* @since 23/11/2020
+* @version 23/11/2020
 */
     //CONSTANTES PARA LA EXTENSIÓN MYSQLI
 
     //constantes servidor casa
-//    define('HOST', '192.168.0.122'); 
-//    define('DBNAME', 'DAW208DBDepartamentos');
-//    define('USER', 'usuarioDAW208DBDepartamentos');
-//    define('PASSWORD', 'P@ssw0rd');
-//    define('PORT', '3306');
+    define('HOST', '192.168.0.122'); 
+    define('DBNAME', 'DAW208DBProyectoTema5');
+    define('USER', 'usuarioDAW208DBProyectoTema5');
+    define('PASSWORD', 'P@ssw0rd');
+    define('PORT', '3306');
     
     //constantes entorno desarrollo
-    define('HOST', '192.168.20.19'); 
-    define('DBNAME', 'DAW208DBDepartamentos');
-    define('USER', 'usuarioDAW208DBDepartamentos');
-    define('PASSWORD', 'paso');
-    define('PORT', '3306');
+//    define('HOST', '192.168.20.19'); 
+//    define('DBNAME', 'DAW208DBProyectoTema5');
+//    define('USER', 'usuarioDAW208DBProyectoTema5');
+//    define('PASSWORD', 'paso');
+//    define('PORT', '3306');
     
     //constantes entorno explotación
 //    define('HOST', '192.168.20.18'); 
-//    define('DBNAME', 'DAW208DBDepartamentos');
-//    define('USER', 'usuarioDAW208DBDepartamentos');
+//    define('DBNAME', 'DAW208DBProyectoTema5');
+//    define('USER', 'usuarioDAW208DBProyectoTema5');
 //    define('PASSWORD', 'paso');
 //    define('PORT', '3306');
     

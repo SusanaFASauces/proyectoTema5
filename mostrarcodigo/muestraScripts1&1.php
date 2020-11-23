@@ -23,8 +23,8 @@
                     <?php
                         /**
                          * @author Susana Fabián Antón
-                         * @since 18/11/2020
-                         * @version 18/11/2020
+                         * @since 23/11/2020
+                         * @version 23/11/2020
                          */
                         echo "<h5>crearTablas.sql</h5>"; 
                         highlight_file("../scriptDB/crearTablas.sql");
@@ -58,7 +58,7 @@
         </main>
         <footer>
             <address>Contacta conmigo en: susana.fabant@educa.jcyl.es</address>
-            <p>- 13 de Noviembre 2020 -</p>
+            <p>- 23 de Noviembre 2020 -</p>
         </footer>
     </body>
 </html>

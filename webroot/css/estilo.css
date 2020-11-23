@@ -91,7 +91,7 @@ footer address {
 
 /* Reglas de estilo de tablas */
 table {
-    width: 100%;
+    width: 100% !important;
 }
 tr:nth-child(even) {
     background-color: #C9D7DF;

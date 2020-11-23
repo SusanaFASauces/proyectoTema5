@@ -14,14 +14,14 @@
         <main>
             <section>
                 <header>
-                    <h3>Borra todos los registros de la tabla Departamento</h3>
+                    <h3>Mostrar el contenido de las variables superglobales y phpinfo()</h3>
                 </header>
                 <article>
                     <?php
                         /**
                          * @author Susana Fabián Antón
-                         * @since 12/11/2020
-                         * @version 12/11/2020
+                         * @since 23/11/2020
+                         * @version 23/11/2020
                          */
                     
                         highlight_file("../codigoPHP/ejercicio00.php");
@@ -31,7 +31,7 @@
         </main>
         <footer>
             <address>Contacta conmigo en: susana.fabant@educa.jcyl.es</address>
-            <p>- 12 de Noviembre 2020 -</p>
+            <p>- 23 de Noviembre 2020 -</p>
         </footer>
     </body>
 </html>

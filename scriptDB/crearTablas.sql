@@ -9,4 +9,16 @@ CREATE TABLE IF NOT EXISTS Departamento (
     FechaBaja DATE,
     VolumenNegocio FLOAT,
     PRIMARY KEY(CodDepartamento)
-)ENGINE=InnoDB;
+) ENGINE=InnoDB;
+
+-- creamos la tabla Usuario
+CREATE TABLE IF NOT EXISTS Usuario (
+    CodUsuario VARCHAR(15) NOT NULL,
+    DescUsuario VARCHAR(255) NOT NULL,
+    Password VARCHAR(255) NULL, -- completar con encriptación
+    Perfil VARCHAR(255) NOT NULL, -- cambiar a enum "administrador|usuario"
+    NumConexiones INT,
+    FechaHoraUltimaConexion TIMESTAMP,
+    ImagenUsuario VARCHAR(255), -- cambiar a mediumblob 
+    PRIMARY KEY(CodUsuario)
+) ENGINE=InnoDB;
