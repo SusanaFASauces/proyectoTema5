@@ -4,3 +4,6 @@
 
 -- borramos la tabla Departamento
 DROP TABLE IF EXISTS Departamento;
+
+-- borramos la tabla Usuario
+DROP TABLE IF EXISTS Usuario;

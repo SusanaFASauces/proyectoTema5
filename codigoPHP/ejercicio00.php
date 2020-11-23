@@ -14,48 +14,82 @@
         <main>
             <section>
                 <header>
-                    <h3>Borra todos los registros de la tabla Departamento</h3>
+                    <h3>Mostrar el contenido de las variables superglobales y phpinfo()</h3>
                 </header>
                 <article>
+                    <header>
+                        <h4>Variables superglobales</h4>
+                    </header>
+                    <h5>$GLOBALS</h5>
+                    <table class="margin">
+                        <tbody>
+                            <tr>
+                                <th>Variable</th>
+                                <th>Valor</th>
+                            </tr>
+                            <?php
+                                /**
+                                 * @author Susana Fabián Antón
+                                 * @since 23/11/2020
+                                 * @version 23/11/2020
+                                 */
+                                foreach ($GLOBALS as $variable => $valor) {
+                                    echo "<tr>";
+                                    echo "<td>".$variable."</td>";
+                                    echo "<td>".$valor."</td>";
+                                    echo "</tr>";
+                                }
+                            ?>
+                        </tbody>
+                    </table>
+                    <h5>$_SERVER</h5>
+                    <table class="margin">
+                        <tbody>
+                            <tr>
+                                <th>Variable</th>
+                                <th>Valor</th>
+                            </tr>
+                            <?php
+                                foreach ($_SERVER as $variable => $valor) {
+                                    echo "<tr>";
+                                    echo "<td>".$variable."</td>";
+                                    echo "<td>".$valor."</td>";
+                                    echo "</tr>";
+                                }
+                            ?>
+                        </tbody>
+                    </table>
+                    <h5>$_GET</h5>
+                    <table class="margin">
+                        <tbody>
+                            <tr>
+                                <th>Variable</th>
+                                <th>Valor</th>
+                            </tr>
+                            <?php
+                                foreach ($_GET as $variable => $valor) {
+                                    echo "<tr>";
+                                    echo "<td>".$variable."</td>";
+                                    echo "<td>".$valor."</td>";
+                                    echo "</tr>";
+                                }
+                            ?>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <header>
+                        <h4>phpinfo()</h4>
+                    </header>
                     <?php
-                        /**
-                         * @author Susana Fabián Antón
-                         * @since 13/11/2020
-                         * @version 18/11/2020
-                         */
-                        require_once '../config/confDBPDO.php'; //fichero que contiene las constantes de configuración de una base de datos en PDO
-                        
-                        try {
-                            $miDB = new PDO(DSN, USER, PASSWORD); //instanciamos un objeto de la clase PDO para conectarnos a la base de datos
-                            $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //establecemos que cuando se produzca un error en el atributo ERRMODE se lanzará una excepción
-                            
-                                    
-                            $mysqlImportFilename ='../scriptDB/BorraTablasDAW208DBDepartamentos.sql'; //cadena que contiene el nombre del archivo sql que queremos ejecutar
-                            $command='mysql -h'.HOST.' -u'.USER.' --password="'.PASSWORD.'" '.DBNAME.' < '.$mysqlImportFilename; //cadena que contiene el comando que vamos a utilizar
-                            exec($command,$aOutput,$worked); //ejecutamos el comando
-                            switch($worked) {
-                                case 0:
-                                    echo "<p style=color:green>Los registros de la tabla Departamento se han borrado con éxito</p>"; //mostramos un mensaje indicando que todo ha ido bien
-                                    break;
-                                case 1:
-                                    echo "<p style=color:red>No han podido borrarse los registros de la tabla Departamento</p>"; //mostramos un mensaje indicando que se ha producido un error
-                                    break;
-                            }
-                        }
-                        catch (PDOException $ex) { // código a ejecutar cuando se produce un error 
-                            echo "<p style=color:red>Error: ".$ex->getMessage()."<br>"; // muestro el mensaje de error
-                            echo "Código de error: ".$ex->getCode()."</p>"; // muestro el código del error
-                        }
-                        finally {
-                            unset($miDB); //cerramos la conexion
-                        }
+                        phpinfo();
                     ?>
                 </article>
             </section>
         </main>
         <footer>
             <address>Contacta conmigo en: susana.fabant@educa.jcyl.es</address>
-            <p>- 18 de Noviembre 2020 -</p>
+            <p>- 23 de Noviembre 2020 -</p>
         </footer>
     </body>
 </html>

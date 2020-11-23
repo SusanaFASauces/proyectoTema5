@@ -23,8 +23,8 @@
                     <?php
                         /**
                          * @author Susana Fabián Antón
-                         * @since 11/11/2020
-                         * @version 11/11/2020
+                         * @since 23/11/2020
+                         * @version 23/11/2020
                          */
                          
                         highlight_file("../config/confDBPDO.php");
@@ -48,7 +48,7 @@
         </main>
         <footer>
             <address>Contacta conmigo en: susana.fabant@educa.jcyl.es</address>
-            <p>- 11 de Noviembre 2020 -</p>
+            <p>- 23 de Noviembre 2020 -</p>
         </footer>
     </body>
 </html>
