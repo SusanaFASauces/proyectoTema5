@@ -23,11 +23,11 @@ CREATE TABLE IF NOT EXISTS Departamento (
 CREATE TABLE IF NOT EXISTS Usuario (
     CodUsuario VARCHAR(15) NOT NULL,
     DescUsuario VARCHAR(255) NOT NULL,
-    Password VARCHAR(255) NULL, -- completar con encriptación
-    Perfil VARCHAR(255) NOT NULL, -- cambiar a enum "administrador|usuario"
-    NumConexiones INT,
+    Password VARCHAR(64) NOT NULL,
+    Perfil ENUM('administrador', 'usuario') DEFAULT 'usuario',
+    NumConexiones INT DEFAULT 0,
     FechaHoraUltimaConexion TIMESTAMP,
-    ImagenUsuario VARCHAR(255), -- cambiar a mediumblob 
+    ImagenUsuario MEDIUMBLOB,
     PRIMARY KEY(CodUsuario)
 );
 

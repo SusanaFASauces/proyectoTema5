@@ -14,7 +14,7 @@
         <main>
             <section>
                 <header> 
-                    <h3>Scripts de creación, carga inicial y borrado de la base de datos <u>DAW208DBProyectoTema5</u></h3>
+                    <h3>Scripts de creación, carga inicial y borrado de la base de datos</h3>
                 </header>
                 <article>
                     <header>
@@ -49,8 +49,14 @@
             </section>
         </main>
         <footer>
+            <div class="iconos-izq">
+                <a href="../indexProyectoTema5.html"><img src="../webroot/icons/volver.png" alt="volver"></a>
+            </div>
             <address>Contacta conmigo en: susana.fabant@educa.jcyl.es</address>
             <p>- 23 de Noviembre 2020 -</p>
+            <div class="iconos-dcha">
+                <a href="https://github.com/SusanaFASauces" target="_blank"><img src="../webroot/icons/github.png" alt="github"></a>
+            </div>
         </footer>
     </body>
 </html>
