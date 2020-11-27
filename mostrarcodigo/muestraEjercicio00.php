@@ -30,8 +30,14 @@
             </section>
         </main>
         <footer>
+            <div class="iconos-izq">
+                <a href="../indexProyectoTema5.html"><img src="../webroot/icons/volver.png" alt="volver"></a>
+            </div>
             <address>Contacta conmigo en: susana.fabant@educa.jcyl.es</address>
             <p>- 23 de Noviembre 2020 -</p>
+            <div class="iconos-dcha">
+                <a href="https://github.com/SusanaFASauces" target="_blank"><img src="../webroot/icons/github.png" alt="github"></a>
+            </div>
         </footer>
     </body>
 </html>

@@ -14,14 +14,14 @@
         <main>
             <section>
                 <header>
-                    <h3>Conexión a la base de datos con la cuenta usuario y tratamiento de errores</h3>
+                    <h3>Desarrollo de un control de acceso con identificación del usuario basado en la función header()</h3>
                 </header>
                 <article>
                     <?php
                         /**
                         * @author Susana Fabián Antón
-                        * @since 29/10/2020
-                        * @version 29/10/2020
+                        * @since 27/11/2020
+                        * @version 27/11/2020
                         */
                     
                         highlight_file("../codigoPHP/ejercicio01.php");
@@ -30,8 +30,14 @@
             </section>
         </main>
         <footer>
+            <div class="iconos-izq">
+                <a href="../indexProyectoTema5.html"><img src="../webroot/icons/volver.png" alt="volver"></a>
+            </div>
             <address>Contacta conmigo en: susana.fabant@educa.jcyl.es</address>
-            <p>- 29 de Octubre 2020 -</p>
+            <p>- 27 de Noviembre 2020 -</p>
+            <div class="iconos-dcha">
+                <a href="https://github.com/SusanaFASauces" target="_blank"><img src="../webroot/icons/github.png" alt="github"></a>
+            </div>
         </footer>
     </body>
 </html>

@@ -8,8 +8,8 @@
     //CONSTANTES PARA LA EXTENSIÓN PDO
 
     //constantes servidor casa
-    define('DSN', 'mysql:host=192.168.0.122;dbname=DAW208DBProyectoTema5');
-    define('HOST', '192.168.0.122');
+    define('DSN', 'mysql:host=192.168.31.208;dbname=DAW208DBProyectoTema5');
+    define('HOST', '192.168.31.208');
     define('DBNAME', 'DAW208DBProyectoTema5');
     define('USER', 'usuarioDAW208DBProyectoTema5');
     define('PASSWORD', 'P@ssw0rd');
